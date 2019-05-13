@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<!--
+Name: Quinn Richmond
+Date Created: May 3, 2019
+Most recent revision:
+-->
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewprt" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="restaurantStyles.css" rel="stylesheet" type"text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <script type="text/JavaScript" src="restaurant.js"></script>
+
+    <style>
+
+      .container{
+        width: 500px;
+      }
+      #name, #email, #phone, #reason, #additionalInfo{
+        width: 500px;
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="home.html" style="background-color: #c4313f; color: #f2e6de;">
+          <i class="fa fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li>
+    </ul>
+
+    <header>
+      <h1>'Za Town</h1>
+    </header>
+
+    <hr />
+
+    <p style="text-align: center; font-weight: bold;">***Required Fields in Bold***</p>
+
+    <form name="contactUs" onsubmit="return validateItems();">
+      <div class="container">
+        <div class="form-group form-inline">
+          <label for="name" style="font-weight: bold;">Name:</label>
+          <input type="name" class="form-control" id="name" placeholder="Jane Doe">
+        </div>
+
+        <div class="form-group form-inline">
+          <label for="email" style="font-weight: bold;">Email:</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group form-inline">
+          <label for="phone" style="font-weight: bold;">Phone:</label>
+          <input type="phone" class="form-control" id="phone" placeholder="000-000-0000">
+        </div>
+
+        <div class="form-group form-inline">
+          <label for="reason">Reason for Inquiry:</label>
+          <select class="form-control" id="reason">
+            <option>Catering</option>
+            <option>Private Party</option>
+            <option>Feedback</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group form-inline">
+          <label for="additionalInfo">Additional Information:</label>
+          <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
+        </div>
+
+        <div>
+          <label class="form-check-label">Have you been to the restaurant?</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadio" id="inlineRadio1" value="no">
+            <label class="form-check-label" for="inlineRadio1">no</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadio" id="inlineRadio2" value="yes">
+            <label class="form-check-label" for="inlineRadio2">Yes</label>
+          </div>
+        </div>
+
+        <br />
+
+        <div>
+          <label class="form-check-label">Best days to contact you?</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="M">
+            <label class="form-check-label" for="inlineCheckbox1">M</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="T">
+            <label class="form-check-label" for="inlineCheckbox2">T</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="W">
+            <label class="form-check-label" for="inlineCheckbox3">W</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Th">
+            <label class="form-check-label" for="inlineCheckbox4">Th</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="F">
+            <label class="form-check-label" for="inlineCheckbox5">F</label>
+          </div>
+        </div>
+
+        <br />
+
+        <button class="btn btn-primary" type="submit">Send Request</button>
+      </div>
+    </form>
+
+    <hr />
+
+    <footer>
+      <p>780 Hill St, Braham, MN, 55006</p>
+      <p>Phone: 978-236-2129</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

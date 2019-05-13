@@ -1,0 +1,60 @@
+/* Name: Quinn Richmond
+  Date Created: May 8, 2019
+  Last Modified: */
+header, footer{
+  text-align: center;
+  background-color: #473236;
+  color: #f2e6de;
+  height: 100px;
+  padding: 20px 10px 40px 10px;
+}
+
+header{
+  padding: 20px 10px 40px 10px;
+}
+
+footer{
+  padding: 30px 10px 20px 10px;
+}
+
+h1{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 3.5em;
+}
+
+body{
+  background-color: #f0f2ef;
+  font-family: sans-serif;
+}
+
+a{
+  background-color: #c4313f;
+  color: #f2e6de;
+  padding: 8px;
+  border: thin solid #473236;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  width: 120px;
+}
+
+a:hover{
+  color: #d6c7c0;
+  font-weight: bold;
+}
+
+a:active{
+  background-color: #c4313f;
+}
+
+a:visited{
+  color: #473236;
+}
+
+.clear-float{
+  clear: both;
+}
+
+hr{
+  background-color: #473236;
+}
